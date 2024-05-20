@@ -1,0 +1,15 @@
+.videoo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; // Asegura que el video esté detrás de todo
+    overflow: hidden; // Asegura que el video no se desborde de la ventana
+}
+
+.videoo video {
+    width: 100%; // Ajusta el ancho del video para que se ajuste al contenedor
+    height: 100%; // Ajusta la altura del video para que se ajuste al contenedor
+    object-fit: cover; // Escala el video para que cubra todo el contenedor
+}
