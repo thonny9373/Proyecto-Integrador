@@ -2,10 +2,11 @@
 @import "base/resets";
 @import "components/cards";
 @import "layout/header";
-@import "pages/index";
-@import "pages/carrito";
-@import "pages/contacto";
-@import "pages/nosotros";
+@import "views/pages/_index";
+@import "views/pages/_carrito";
+@import "views/pages/_contacto";
+@import "views/pages/_nosotros";
+@import "views/pages/_footer";
 
 
 /* Estructura 7 en 1.
