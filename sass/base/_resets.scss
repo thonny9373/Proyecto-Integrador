@@ -1,6 +1,17 @@
+*::after,
+*::before,
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0.5px solid red;
+    
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    color: #333;
+}
+.anade-carrito{
+    text-decoration: underline;
 }
