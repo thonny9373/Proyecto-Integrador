@@ -1,40 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="LaptopZone.jpg">
     <title>Proyecto Integrador - Inicio</title>
   </head>
   <body>
-
     <header class="main-header">
-      <input type="checkbox" id="menu">
+      <input type="checkbox" id="menu" />
 
       <nav class="nav-bar">
         <ul class="nav-bar__nav-list">
           <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Inicio</a>
+            <a href="index.html" target="_blank" class="nav-bar__nav-link">Inicio</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Alta</a>
+            <a href="views/alta.html" target="_blank" class="nav-bar__nav-link">Alta</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Nosotros</a>
+            <a href="views/nosotros.html" target="_blank" class="nav-bar__nav-link">Nosotros</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Contacto</a>
+            <a href="views/contacto.html" target="_blank" class="nav-bar__nav-link">Contacto</a>
           </li>
         </ul>
-      </nav> <!-- .nav-bar -->
+      </nav>
+      <!-- .nav-bar -->
 
       <div class="search-bar">
-        <div class="search-bar__logo-container">Logo</div>
+        <div class="search-bar__logo-container">
+          <img src="LaptopZone.jpg" alt="logo">
+        </div>
         <form action="#" class="search-bar__form-container">
           <label for="busqueda" class="search-bar__form-label">Buscar</label>
-          <input type="search" class="search-bar__form-search" id="busqueda">
-          <input type="submit" class="search-bar__form-submit" value="Buscar">
+          <input type="search" class="search-bar__form-search" id="busqueda" />
+          <input type="submit" class="search-bar__form-submit" value="Buscar" />
         </form>
-        <div class="search-bar__carrito-container">C</div>
+        <div class="search-bar__carrito-container">
+          <img class="loguitos" src="public/imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+        </div>
         <div class="menu-toogle">
           <label for="menu" class="menu-toogle__label">
             <span class="menu-toogle__top-bread"></span>
@@ -42,209 +47,698 @@
             <span class="menu-toogle__bottom-bread"></span>
           </label>
         </div>
-      </div> <!-- .search-bar -->
-
-    </header> <!-- main-header -->
+      </div>
+      <!-- .search-bar -->
+    </header>
+    <!-- main-header -->
 
     <main>
       <section class="section-cards">
         <header class="section-cards__header">
-          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-          <p>Se encontraron X productos</p>
+          <h1>Ofertas del Dia!</h1>
+          <p>Marcas Destacadas</p>
+          <figure>
+            <a href="https://www.lenovo.com/" target="_blank">
+              <img src="imagenes/marcas/lenovo.webp" alt="LENOVO">
+            </a>
+            <a href="https://www.apple.com/" target="_blank">
+              <img src="imagenes/marcas/image.png" alt="  APPLE">
+            </a>
+            <a href="https://www.lg.com/" target="_blank">
+              <img src="imagenes/marcas/mobilecms_x_72_png (1).png" alt="LG">
+            </a>
+            <a href="https://www.sony.com/" target="_blank">
+              <img src="imagenes/marcas/mobilecms_x_72_png (2).png" alt="SONY">
+            </a>
+            <a href="https://www.samsung.com/" target="_blank">
+              <img src="imagenes/marcas/mobilecms_x_72_png.png" alt="SAMSUNG">
+            </a>
+            <a href="https://www.hp.com/" target="_blank">
+              <img src="imagenes/marcas/mobilecms_x_72_png.webp" alt="HP">
+            </a>
+          </figure>
         </header>
-      
-      
+
         <div class="cards-container">
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles APPLE/Apple MacBook Air (2022), 13,6 Retina, Chip M2 de Apple, GPU 8 Núcleos, 8 GB, 256 GB SSD, macOS, Teclado Magic Keyboard Touch ID, Blanco.2000$.webp"
+                  alt="Apple MacBook Air (2022), 13,6 Retina, Chip M2 de Apple, GPU 8 Núcleos, 8 GB, 256 GB SSD, macOS, Teclado Magic Keyboard Touch ID, Blanco."
+                  class="card__image">
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">Apple MacBook Air</h2>
+                <div class="card__description">
+                  <p class="product-price">2000$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="img/apple-iphone-11-pro-max.jpg" alt="Iphone 11 Pro Max" class="card__image">
+                <img
+                  src="imagenes/portatiles APPLE/Apple MacBook Air (2022), 13,6 Retina, Chip M2 de Apple, GPU 8 Núcleos, 8 GB, 256 GB SSD, macOS, Teclado Magic Keyboard Touch ID,1069$ .webp"
+                  alt="Apple MacBook Air (2022)"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">Iphone 11 Pro Max</h2>
+                <h2 class="card__heading">Apple MacBook Air (2022)</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">1069$
+                  <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/apple-iphone-12.jpg" alt="IPhone 12" class="card__image">
+                <img
+                  src="imagenes/portatiles APPLE/Apple MacBook Air (2024), 15,3, Chip M3, GPU de 10 núcleos, 16 GB RAM, 512GB de SSD, Teclado Magic Keyboard Touch ID, macOS, Medianoche,1900$.webp"
+                  alt="Camara Canon"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">IPhone 12</h2>
+                <h2 class="card__heading">Apple MacBook Air (2024)</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">1900$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                  
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/camara-canon.jpg" alt="Camara Canon" class="card__image">
+                <img
+                  src="imagenes/portatiles APPLE/Apple MacBook Air (2024), 15,3, Chip M3, GPU de 10 núcleos, 8 GB RAM, 256GB de SSD, Teclado Magic Keyboard Touch ID, macOS, Medianoche,1300$.webp"
+                  alt="Celular Samsung"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">Camara Canon</h2>
+                <h2 class="card__heading">Apple MacBook Air (2024)</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
-                </div>
+                  <p class="product-price">1300$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                  </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/samsung-galaxy-s21-plus-5g.jpg" alt="Celular Samsung" class="card__image">
+                <img
+                  src="imagenes/portatiles APPLE/Apple MacBook Air (2024), 15,3, Chip M3, GPU de 10 núcleos, 8 GB RAM, 512GB de SSD, Teclado Magic Keyboard Touch ID, macOS, Plata.1700$.webp"
+                  alt="Choromecast"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">Celular Samsung</h2>
+                <h2 class="card__heading">Apple MacBook Air (2024)</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">1700$
+                  <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/chromecast-google.jpg" alt="Choromecast" class="card__image">
+                <img
+                  src="imagenes/portatiles APPLE/Apple MacBook Pro (2023) 14,2, Chip M3 Pro, CPU de 11 núcleos, GPU de 14 núcleos, 18 GB RAM, 512GB de SSD, macOS, Plata.2500$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">Choromecast</h2>
+                <h2 class="card__heading">Apple MacBook Pro (2023)</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">2500$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/dji-mavic-2-pro.jpg" alt="DJI Mavic 2 Pro" class="card__image">
+                <img
+                  src="imagenes/portatiles APPLE/Apple MacBook Pro (2023) 16,2, Chip M3 Max, CPU de 16 núcleos, GPU de 40 núcleos, 48 GB RAM, 1TB de SSD, macOS, Negro espacial.3959$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">DJI Mavic 2 Pro</h2>
+                <h2 class="card__heading">Apple MacBook Pro (2023)</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">3959$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/dji-mavic-2-pro.jpg" alt="DJI Mavic 2 Pro" class="card__image">
+                <img
+                  src="imagenes/portatiles APPLE/Apple MacBook Pro (2023) 16,2, Chip M3 Max, CPU de 16 núcleos, GPU de 40 núcleos, 48 GB RAM, 1TB de SSD, macOS, Negro espacial.5000$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">DJI Mavic 2 Pro</h2>
+                <h2 class="card__heading">Apple MacBook Pro (2023)</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">5000$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/dji-mavic-2-pro.jpg" alt="DJI Mavic 2 Pro" class="card__image">
+                <img
+                  src="imagenes/portatiles HP/Portátil - HP 6F205EA, 15,59 , Intel®, 8 GB RAM, 512 GB HDD, Iris® Xe, Windows 11 Home (64 Bit).655$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">DJI Mavic 2 Pro</h2>
+                <h2 class="card__heading">HP 6F205EA</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">655$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/dji-mavic-2-pro.jpg" alt="DJI Mavic 2 Pro" class="card__image">
+                <img
+                  src="imagenes/portatiles HP/Portátil - HP HOME PACK HP 255 G9 con Impresora HP 2720e, Mochila y Ratón de HP, 15,6  Full-HD, AMD Ryzen 3 5425U processor, 8 GB RAM, 256 GB SSD, Radeon™ RX Vega 6, Windows 11 Home (64 Bit).540$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">DJI Mavic 2 Pro</h2>
+                <h2 class="card__heading">HP HOME PACK HP 255 G9 con Impresora HP 2720e</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">540$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/dji-mavic-2-pro.jpg" alt="DJI Mavic 2 Pro" class="card__image">
+                <img
+                  src="imagenes/portatiles HP/Portátil - HP HP CHROMEBOOK X360 11 G3, 11,6  HD, N4020, 4 GB RAM, 32 GB SSD, UHD Graphics, FreeDOS (Sin sistema operativo).580$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">DJI Mavic 2 Pro</h2>
+                <h2 class="card__heading">HP CHROMEBOOK X360 11 G3</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">580$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/dji-mavic-2-pro.jpg" alt="DJI Mavic 2 Pro" class="card__image">
+                <img
+                  src="imagenes/portatiles HP/Portátil - HP Pavilion Plus 14- ew0001ns, 14 2.8K, Intel® Evo™ Core™ i7-1355U, 16GB RAM, 1TB SSD, Iris® Xe, W11 H.1900$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">DJI Mavic 2 Pro</h2>
+                <h2 class="card__heading">HP Pavilion Plus 14- ew0001ns</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">1900$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
+          </div>
+          <!-- .card -->
 
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/dji-mavic-2-pro.jpg" alt="DJI Mavic 2 Pro" class="card__image">
+                <img
+                  src="/public/imagenes/portatiles HP/Portátil - HP Pavilion Plus 14-ew1002ns, 14 2.8K, Intel® Evo™ Edition Core™ Ultra 5-125H , 16GB RAM, 512GB SSD, Gráficos Intel® Arc™, Windows 11 H.989$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">DJI Mavic 2 Pro</h2>
+                <h2 class="card__heading">HP Pavilion Plus 14-ew1002ns</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">989$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
-
+          </div>
+          <!-- .card -->
           <div class="card">
             <article class="card__article">
               <div class="card__image-container">
-                <img src="/public/img/dji-mavic-2-pro.jpg" alt="DJI Mavic 2 Pro" class="card__image">
+                <img
+                  src="imagenes/portatiles HP/Portátil - HP ProBook 450 G8, 15,6  Full-HD, Intel Core i5-1135G7, 8 GB RAM, 512 GB SSD, Iris® Xe, Windows 10 Pro (64 Bit).860$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
               </div>
               <div class="card__content">
-                <h2 class="card__heading">DJI Mavic 2 Pro</h2>
+                <h2 class="card__heading">HP ProBook 450 G8 Intel Core i5-1135G7</h2>
                 <div class="card__description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error fugiat placeat facere quasi illum?</p>
+                  <p class="product-price">860$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
                 </div>
               </div>
             </article>
-          </div> <!-- .card -->
-
+          </div>
+          <!-- .card -->
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="public/imagenes/portatiles HP/Portátil gaming - HP Victus 16-s0017ns, 16.1 Full HD, AMD Ryzen™ 7 7840HS, 32GB RAM, 1TB SSD, RTX™ 4060, Sin sistema operativo, Plata mica.1400$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">gaming - HP Victus 16-s0017ns</h2>
+                <div class="card__description">
+                  <p class="product-price">1400$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                  </div>
+              </div>
+            </article>
+          </div>
+          <!-- .card -->
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles LG/Portátil - LG 15Z90ST-G.AD75B, 15.6 Full-HD, Intel® Evo™ Edition Core™ Ultra 7-155H, 32 GB RAM, 512 GB SSD, Arc™ GPU, W11H, Azul Neptuno.1650$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">LG 15Z90ST-G.AD75B</h2>
+                <div class="card__description">
+                  <p class="product-price">1650$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .card -->
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles LG/Portátil - LG 16U70R-G.AA59B, 16, WUXGA, Ryzen™ 5 7530U, 16 GB, 1 TB SSD, Radeon™ Onboard Graphics, Windows 11 Home (64 Bit), Gris Carbón.750$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">LG 16U70R-G.AA59B</h2>
+                <div class="card__description">
+                  <p class="product-price">750$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+              </div>
+              </div>
+            </article>
+          </div>
+          <!-- .card -->
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="public/imagenes/portatiles LG/Portátil - LG 16Z90S-G.AA76B, 16 WQXGA, Intel® Evo™ Edition Core™ Ultra 7-155H, 16 GB RAM, 512 GB SSD, Arc™ GPU, W11, Gris Carbón.800$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">LG 16Z90S-G.AA76B</h2>
+                <div class="card__description">
+                  <p class="product-price">800$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .card -->
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles LG/Portátil - LG 16Z90SP-A.AD75B, 16 WQXGA, Intel® Evo™ Edition Core™ Ultra 7-155H, 32 GB RAM, 512 GB SSD, GeForce RTX™ 3050, W11H, Negro Obsidiana.1450$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">LG 16Z90SP-A.AD75B</h2>
+                <div class="card__description">
+                  <p class="product-price">1450$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                </div>
+                </div>
+            </article>
+          </div>
+          <!-- .card -->
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles LG/Portátil - LG 16Z90SP-K.AA75B, 16, WQXGA+, Intel® Evo™ Edition Core™ Ultra 7-155H, 16 GB RAM, 512 GB SSD, Arc™, W11H, Negro Obsidiana.1700$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">LG 16Z90SP-K.AA75B</h2>
+                <div class="card__description">
+                  <p class="product-price">1700$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                  </div>
+                </div>
+            </article>
+          </div>
+          <!-- .card -->
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles LG/Portátil - LG 17Z90SP-E.AD75B, 17 WQXGA, Intel® Evo™ Edition Core™ Ultra 7-155H, 32 GB RAM, 512 GB SSD, GeForce RTX™ 3050, W11H, Negro Obsidiana.2100$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">LG 17Z90SP-E.AD75B</h2>
+                <div class="card__description">
+                  <p class="product-price">2100$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .card -->
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles LG/Portátil - LG GRAM 14Z90RS-G.AD74B I7-1360P32512W11 HOME, 14  WQXGA+, Intel® Core™ i7-1360P, 32 GB RAM, 512 GB SSD, Iris® Xe, Windows 11 (64 Bit).1563$.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">LG GRAM 14Z90RS-G.AD74B I7-1360P32512W11 HOME</h2>
+                <div class="card__description">
+                  <p class="product-price">1563$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles LG/ASSET_MP_99078954.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">MICROSOFT QI9-00005, 13 " 2K UltraWide QHD</h2>
+                <div class="card__description">
+                  <p class="product-price">1563$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="card">
+            <article class="card__article">
+              <div class="card__image-container">
+                <img
+                  src="imagenes/portatiles LG/ASSET_MP_107157197.webp"
+                  alt="DJI Mavic 2 Pro"
+                  class="card__image"
+                />
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">Convertible 2 en 1 - MICROSOFT MJX-00003</h2>
+                <div class="card__description">
+                  <p class="product-price">1563$
+                    <br>
+                  <a class="anade-carrito" href="#">Anade al carrito
+                    <img class="carrito" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .card -->
+          
+          
         </div>
-
-      </section> <!-- .section-cards -->
+      </section>
+      <!-- .section-cards -->
     </main>
 
-    <!-- footer -->
+   <footer>
+
     
+      <div class="contacto">
+        <h3>Contacto</h3>
+
+      </div> <!-- contacto -->
+      <div class="chat">
+        <p>¿Necesitas ayuda?</p>
+        <a class="a-contacto" href="#">
+        <img class="img-contacto" src="imagenes/iconos/StyleGuideChat.svg" alt="chat">
+      </a>
+      </div> <!-- chat -->
+
+      <div class="formulario">
+        <p>Contacta con nosotros</p>
+        <a class="a-contacto" href="#">
+          <img class="img-contacto" src="imagenes/iconos/StyleGuideContact.svg" alt="formulario">
+      </a>
+    </div><!-- formulario -->
+
+      <div class="figure-footer">
+        <h3>Siguenos en</h3>
+        <figure>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img class="loguitos" src="imagenes/iconos/facebook.svg" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img class="loguitos" src="imagenes/iconos/instagram.svg" alt="instagram">
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img class="loguitos" src="imagenes/iconos/X__twitter_.svg" alt="X">
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img class="loguitos" src="imagenes/iconos/youtube.svg" alt="youtube">
+          </a>
+
+        </figure>
+      </div><!-- figure-footer -->
+      
+
+    
+    <div class="footer-column">
+      
+    <h3>Información Legal</h3>
+    <ul>
+      <li><a href="#">Términos y Condiciones</a></li>
+      <li><a href="#">Política de Privacidad</a></li>
+      <li><a href="#">Aviso Legal</a></li>
+    </ul>
+    
+    <ul>
+      <li><a href="#">Envíos y Devoluciones</a></li>
+    </ul>
+                
+    </div> <!-- footer-column -->
+
+    <div class="metodos-pago">
+      <p>Métodos de pago</p>
+      <a href="https://www.americanexpress.com/" target="_blank">
+        <img class="loguito" src="imagenes/metodos de pago/logo-amex-bw.svg" alt="AmericanExpress">
+      </a>
+      <a href="https://www.mastercard.com/" target="_blank">
+        <img class="loguito" src="imagenes/metodos de pago/logo-mastercard-bw.svg" alt="mastercard">
+      </a>
+      <a href="#" target="">
+        <img class="loguito" src="imagenes/metodos de pago/logo-payment-in-store-es-bw.svg" alt=" Pagar en tienda">
+      </a>
+      <a href="https://www.paypal.com/" target="_blank">
+        <img class="loguito" src="imagenes/metodos de pago/logo-paypal-bw.svg" alt=" Paypal">
+      </a>
+      <a href="https://www.visa.com/" target="_blank">
+        <img class="loguito" src="imagenes/metodos de pago/logo-visa-bw.svg" alt=" Visa">
+      </a>
+    </div>
+
+    <div class="descarga-app">
+      <p>Descárgate nuestra APP</p>
+      <a href="https://www.apple.com/" target="_blank">
+        <img src="imagenes/descarga nuestra app/AppleStoreEn.svg" alt="AppleStore">
+      </a>
+      <a href="https://play.google.com/" target="_blank">
+        <img src="imagenes/descarga nuestra app/GoogleAppStoreEn.svg" alt="GoogleAppStore">
+      </a>
+    </div>
+
+   </footer>
+   <p>
+     &copy; 2024 LaptopZone. Todos los derechos reservados.
+    </p>
     
     <script type="module" src="/main.js"></script>
   </body>
