@@ -140,12 +140,12 @@ body{
     font-weight: 500;
     padding: 5px;
 }
-.search-bar__form-label:hover{
+.search-bar__form-submit{
+    cursor: pointer;
+    padding: 20px;
+}
+.search-bar__form-submit:hover{
     box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
     transform: scale(1.2);
-}
-.search-bar__form-submit{
-    padding: 20px;
-    
 }
 
