@@ -1,9 +1,32 @@
+body{
+    background-color: #777;
+    position: relative;
+    z-index: 0;
+}
+.contenerdor{
+    background-color: #abcb;
+}
+.imagen-1{
+     position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca la imagen detrás del contenido del header pero delante del body */
+  background: url('../imagenes/iconos/portatil.jpg') no-repeat center center;
+  background-size: cover;
+}
+.logo-marcas{
+    width: 70px;
+}
 .section-cards{
     border-radius: 5px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
 
 &__header {
+    position: relative;
+    z-index: 1;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
@@ -39,7 +62,7 @@
     border-radius: 10px 10px 0 0;
 }
 .card__content{
-   
+   background-color: #abc;
     
 }
 .card__heading{
@@ -51,7 +74,7 @@
     
 }
 .card__description{
-    
+    background-color: #ddd;
 }
 
 .card__image-container:hover{
@@ -76,12 +99,13 @@
 }
 .h1-ofertas{
     display: flex;
-    justify-content: left;
+    justify-content: right;
     font-size: 40px;
 }
 .p-marcas{
     display: flex;
-    justify-content: left;
+    justify-content: right;
+    font-weight: 500;
     font-size: 30px;
 }
 .nav-bar{
@@ -103,6 +127,9 @@
     font-size: 40px;
     font-weight: 700;
     padding: 30px;
+}
+.search-bar{
+    background-color: #999;
 }
 .search-bar__carrito-container{
     padding: 20px;

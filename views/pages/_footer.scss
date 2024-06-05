@@ -8,12 +8,91 @@
     cursor: pointer;
     
 }
+.logo-carro{
+    width: 50px;
+}
 .loguito{
+    background-color: black;
     padding: 2px;
     width: 40px;
-    height: 400px;
+    height: 40px;
 }
 .carrito{
     width: 40px;
     height: 25px;
+}
+.footer-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgb(173, 162, 162);
+  border-top: 1px solid #e7e7e7;
+
+  .footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+
+    .footer-title {
+      font-size: 19px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .footer-subtitle {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 5px;
+
+        a {
+          color: #333;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .payment-methods, .app-download, figure {
+      display: flex;
+      gap: 10px;
+
+      .payment-logo, .app-logo, .loguitos {
+        max-width: 50px;
+      }
+    }
+
+    .contacto {
+      .a-contacto {
+        display: inline-block;
+        margin: 5px 0;
+
+        .img-contacto {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.footer-copy {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+ 
 }
