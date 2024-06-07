@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="portatil.jpg">
+    <link rel="icon" href="imagenes/marcas/icono-logo.jpg">
     <title>Proyecto Integrador - Contacto</title>
 </head>
 <body>
@@ -29,15 +29,13 @@
         </nav> <!-- .nav-bar -->
   
         <div class="search-bar">
-          <div class="search-bar__logo-container"></div>
-          <img class="logo-carro-1" src="views/portatil.jpg" alt="logo">
+          <div class="search-bar__logo-container"><img class="logo-carro-1" src="imagenes/marcas/icono-logo.jpg" width="80" height="70" alt="logo"></div>
           <form action="#" class="search-bar__form-container">
-            <label for="busqueda" class="search-bar__form-label"></label>
+            <label for="busqueda" class="search-bar__form-label"><img class="lupa" src="imagenes/marcas/lupa.png" alt="lupa" width="45" height="25"></label>
             <input type="search" class="search-bar__form-search" id="busqueda">
             <input type="submit" class="search-bar__form-submit" value="Buscar">
           </form>
-          <div class="search-bar__carrito-container"></div>
-          <img class="logo-carro" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito">
+          <div class="search-bar__carrito-container"><img class="logo-carro" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito"></div>
           <div class="menu-toogle">
             <label for="menu" class="menu-toogle__label">
               <span class="menu-toogle__top-bread"></span>
@@ -49,9 +47,94 @@
   
       </header> <!-- main-header -->
 
+      <div class="texto-contacto">
+        <h1>Contacto</h1>
+        <h2><i>¿En qué podemos ayudarte?</i></h2>
+        <p>Si tienes cualquier duda sobre tu compra o consulta sobre nuestras tiendas, puedes contactar con nosotros como prefieras:</p>
+        <h2><i>Puedes enviarnos tu consulta a través de este formulario</i></h2>
+        <p>Los campos marcados con un asterisco (*) son obligatorios.</p>
+      </div>
+
       
-        <div class="#">
-          <h1>Formulario de Contacto </h1>
+        <div class="rn_categoryAskDynamic">
+    <div class="ms-widget-breadcrumbs">
+        <ul class="ms-widget-breadcrumbs__list">
+            <li class="ms-widget-breadcrumbs__item">
+                <a href="index.html" class="ms-widget-breadcrumbs__link | ms-link">
+                    <img src="imagenes/marcas/home.png" class="home" alt="Inicio" width="25" height="25">
+                </a>
+            </li>
+            <li class="ms-widget-breadcrumbs__item">
+                <span class="ms-widget-breadcrumbs__separator | ms-icon ms-icon--type_arrow-right ms-icon--small"></span>
+                <a href="#" class="ms-widget-breadcrumbs__link | ms-link">Atención al Cliente</a>
+            </li>
+            <li class="ms-widget-breadcrumbs__item">
+                <span class="ms-widget-breadcrumbs__separator | ms-icon ms-icon--type_arrow-right ms-icon--small"></span>
+                Formulario de Contacto
+            </li>
+        </ul>
+    </div>
+
+    <div class="form_title_text">
+        <h3><strong>Hola. ¿En qué podemos ayudarte?</strong></h3>
+    </div>
+
+    <div id="CategoryList">
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">Información y Compras</a>
+                <img class="custom-right-arrow-img" src="views/portatil.jpg">
+            </a>
+        </div>
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">Proceso de Cobro</a>
+                <img class="custom-right-arrow-img" src="img">
+            </a>
+        </div>
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">Pedidos</a>
+                <img class="custom-right-arrow-img" src="img">
+            </a>
+        </div>
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">Devoluciones</a>
+                <img class="custom-right-arrow-img" src="img">
+            </a>
+        </div>
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">Servicio y Reparaciones</a>
+                <img class="custom-right-arrow-img" src="img">
+            </a>
+        </div>
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">Tratamiento de datos personales</a>
+                <img class="custom-right-arrow-img" src="img">
+            </a>
+        </div>
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">Otros</a>
+                <img class="custom-right-arrow-img" src="img">
+            </a>
+        </div>
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">Soluciones para empresas</a>
+                <img class="custom-right-arrow-img" src="img">
+            </a>
+        </div>
+        <div class="block_row categorySelect">
+            <a href="#" class="SubCat-Link">LaptopZone Club</a>
+                <img class="custom-right-arrow-img" src="img">
+            </a>
+        </div>
+    </div>
+
+    <div class="w-200">
+        <div class="progress progress_custom">
+            <div class="progress-bar" id="progressbar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="f-400"><span id="pagenumber">1</span> de 5</p>
+    </div> <!-- w-200 -->
+</div>
+
         
         </div>
     <form class="contact-form" action="mailto:tuemail@example.com" method="post" enctype="text/plain">
@@ -62,14 +145,16 @@
         <input class="contact-form__label-email" type="email" id="email" name="email" placeholder="EJEMPLO: @gmail.com" required>
 
         <label class="contact-form__label" for="comments">Comentarios:</label>
-        <textarea class="contact-form__label-comments" id="comments" name="comments" placeholder="EJEMPLO: @gmail.com" required></textarea>
+        <textarea class="contact-form__label-comments" id="comments" name="comments" placeholder="sugerencias" required></textarea>
 
     </form>
     
     <button type="submit">Enviar</button>
     
-    <h2>Encuéntranos Aquí</h2>
-    <p>Bartolome Mitre 2105 Caba Buenos Aires Argentina</p>
+    <div class="contenedor-final">
+      <h2 class="footer-h2">Encuéntranos Aquí</h2>
+    <p class="fooer-p">Bartolome Mitre 2105 Caba Buenos Aires Argentina</p>
+    </div>
 
 
     <footer class="footer-footer">
@@ -142,6 +227,18 @@
   </div> <!-- contenerdor -->
 
 </footer>
+
+<div class="texto-final">
+    <p><strong>Precios exclusivos para compras en línea. Verifica los precios vigentes en las tiendas Laptozone en la Península y Baleares. Envíos disponibles únicamente a Península y Baleares.</strong></p>
+    <p>Promociones y ofertas aplicables únicamente a productos vendidos por Laptozone.</p>
+    <p>Algunos productos podrían tener una clasificación especial debido a promociones o campañas publicitarias. La clasificación de los resultados de búsqueda se basa en la coincidencia con el término buscado, la popularidad, disponibilidad, relevancia de la categoría y novedad del producto.</p>
+    <p><strong>PUBLICIDAD:</strong></p>
+    <ul>
+        <li>La Tarjeta Laptozone Club Card VISA es emitida por CaixaBank Payments & Consumer, E.F.C., E.P., S.A.U., sujeta a autorización. Los fondos recibidos están protegidos mediante depósito en una cuenta bancaria separada en CaixaBank, S.A. Consulta sobre la tarjeta con pago aplazado (revolving) en <a href="www.caixabankpc.com/es/productos">www.caixabankpc.com/es/productos</a>.</li>
+        <li><strong>Servicios exclusivos para titulares de la Tarjeta Laptozone Club Card.</strong> Descubre más en la app Laptozone Club y participa en la "Ruleta de Premios" y "Compra y Gana". Puedes participar desde las 00:01 horas del día de la compra hasta las 23:59, hora peninsular, del día 20 de cada mes. Condiciones en <a href="www.laptozone.es/es/specials/financiacion/LaptozoneClubCard">www.laptozone.es/es/specials/financiacion/LaptozoneClubCard</a>.</li>
+        <li>Financiación a través de la Tarjeta Laptozone Club Card Visa, emitida por CaixaBank Payments & Consumer, E.F.C., E.P., S.A.U., sujeta a autorización. Los fondos recibidos están protegidos mediante depósito en una cuenta bancaria separada en CaixaBank, S.A. TIN 0% TAE 0%. Financiación disponible en 3, 6, 10, 12, 18, 20 y 24 meses sin intereses. Importe mínimo para financiar: 299€. Ejemplo: para una compra financiada en 24 meses de 654€, 24 cuotas de 27,25€. Precio total e importe adeudado: 654€. Coste total del crédito e intereses: 0€. Sistema de amortización francés. Intereses subvencionados por Laptozone. Financiación al 0% en TV Neo, QLED y OLED desde el 20/05/2024 9:00h hasta el 09/06/2024 23:59h en nuestras tiendas y en laptozone.es, no acumulable con otras promociones.</li>
+    </ul>
+</div>
 
 <!-- Footer Copy -->
 <p class="footer-copy">

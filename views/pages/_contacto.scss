@@ -1,90 +1,188 @@
+// Variables
+$primary-color: #4caf50;
+$secondary-color: #f3f3f3;
+$text-color: #000;
+$separator-margin: 5px;
+$arrow-size: 14px;
+$breadcrumb-item-margin-right: 5px;
+
+// Breadcrumbs
+.ms-widget-breadcrumbs__list {
+    background-color: #dee;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.ms-widget-breadcrumbs__item {
+    margin-right: $breadcrumb-item-margin-right;
+    
+}
+
+.ms-widget-breadcrumbs__link {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.ms-widget-breadcrumbs__separator {
+    margin: 0 $separator-margin;  
+}
+
+// Loader
+#loader {
+    top: 0%;
+    position: fixed;
+    #loader-img {
+        top: 50%;
+    }
+}
+
+// Back Button
+.back_btn_form {
+    display: none;
+    page: 2;
+
+    .custom-left-arrow-img {
+        width: $arrow-size;
+        height: $arrow-size;
+    }
+
+    span {
+        margin-left: 5px;
+    }
+}
+
+// Form Title
+.form_title_text {
+    background-color: #dee;
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 90px;
+        font-weight: bold;
+    }
+}
+
+// Category List
+#CategoryList {
+    background-color: #dee;
+    .block_row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+
+        .SubCat-Link {
+            text-decoration: none;
+            color: $text-color;
+        }
+
+        .custom-right-arrow-img {
+            width: $arrow-size;
+            height: $arrow-size;
+        }
+    }
+}
+
+// Progress Bar
+.progress_custom {
+    background-color: $secondary-color;
+    border-radius: 2px;
+    height: 10px;
+    margin: 20px 0;
+
+    .progress-bar {
+        background-color: $primary-color;
+        height: 100%;
+        border-radius: 2px;
+    }
+}
+
+// General Styles
+.w-200 {
+    width: 200px;
+    
+}
+
+.f-400 {
+    background-color: #dee;
+    font-weight: 400;
+}
+
+// Contact Form
 .contact-form {
-    display: block;
+    background-color: #dee;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: scroll;
+    
 
-    &__label{
+    &__label {
         display: block;
-
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-
-    &__label-text {
-
-        display: block;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border-top-right-radius: 5px;
-        box-shadow: 0px 1px 5px 0px rgba(0 ,0 ,0 ,0.3);
-        padding: 1rem;
-
-    }
-
-    &__label-email {
-        display: block;
-
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
+        margin-bottom: 5px;
+        font-weight: bold;
         
     }
 
+    &__label-text,
+    &__label-email,
     &__label-comments {
-        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
+    &__label-comments {
+        height: 100px;
+        resize: vertical;
     }
 }
-h1 {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    padding: 2rem;
+
+// Submit Button
+button[type="submit"] {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
 }
+
+// Address Section
 h2 {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
+    margin-top: 20px;
 }
+
 p {
+    margin-bottom: 10px;
+
+}
+.footer-h2{
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    padding: 1rem;
-
+    padding-bottom: 10px;
 }
-
-
-
-
-.videoo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-    overflow: hidden; 
+.fooer-p{
+    font-weight: 400;
+    text-align: center;
+    padding-top: 40px;
 }
-
-.videoo video {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
+.contenedor-final{
+    background-color: #dee;
+    margin-top: 5px;
+    padding: 20px;
 }
-
-button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    padding: 2rem;
+.texto-contacto{
+    background-color: #dee;
 }
-
-
-
-

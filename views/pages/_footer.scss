@@ -15,22 +15,24 @@
   padding: 5px;
   width: 50px;
   height: 50px;
+  cursor: pointer;
+  object-fit: contain;
 }
-.search-bar__form-submit{
-  color: black;
-}
+
 .logo-carro-1{
   position: relative;
   margin-top: 4px;
   padding: 5px;
-  width: 80px;
-  height: 80px;
 }
 .loguito{
     background-color: black;
     padding: 2px;
     width: 40px;
     height: 40px;
+}
+.descarga-app{
+  width: 90px;
+  height: 25px;
 }
 .carrito{
     width: 40px;
@@ -96,6 +98,7 @@
         .img-contacto {
           width: 24px;
           height: 24px;
+          object-fit: contain;
         }
       }
     }
@@ -109,5 +112,22 @@
   color: white;
   margin-top: 20px;
   padding: 20px;
+ }
+ .footer-footer{
+  margin-top: 150px;
+ }
  
-}
+ .texto-final{
+  background-color: #ded;
+  font-size: 12px;
+  color: black;
+  margin-top: 40px;
+ }
+ .whatsapp{
+  position: fixed;
+  overflow: hidden;
+  margin-top: -400px;
+  margin-left: 1550px;
+  text-align: center;
+  z-index: 5;
+ }
