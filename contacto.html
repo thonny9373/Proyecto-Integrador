@@ -9,24 +9,24 @@
 <body>
   
     <header class="main-header">
-        <input type="checkbox" id="menu">
+        <!-- <input type="checkbox" id="menu"> -->
   
-        <nav class="nav-bar">
-          <ul class="nav-bar__nav-list">
-            <li class="nav-bar__nav-item">
-              <a href="index.html" class="nav-bar__nav-link">Inicio</a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="alta.html" class="nav-bar__nav-link">Alta</a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="contacto.html" class="nav-bar__nav-link">Contacto</a>
-            </li>
-          </ul>
-        </nav> <!-- .nav-bar -->
+         <nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="index.html" target="_blank" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="alta.html" target="_blank" class="nav-bar__nav-link">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="nosotros.html" target="_blank" class="nav-bar__nav-link">Nosotros</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="contacto.html" target="_blank" class="nav-bar__nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav> <!-- .nav-bar -->
   
         <div class="search-bar">
           <div class="search-bar__logo-container"><img class="logo-carro-1" src="imagenes/marcas/icono-logo.jpg" width="80" height="70" alt="logo"></div>
@@ -35,7 +35,8 @@
             <input type="search" class="search-bar__form-search" id="busqueda">
             <input type="submit" class="search-bar__form-submit" value="Buscar">
           </form>
-          <div class="search-bar__carrito-container"><img class="logo-carro" src="imagenes/envios/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-diseño-plano.jpg" alt="Anade al carrito"></div>
+          <div class="search-bar__carrito-container"><img class="logo-carro" src="cart-shopping-solid.svg" alt="Anade al carrito" width="40" height="40"></div>
+        </div>
           <div class="menu-toogle">
             <label for="menu" class="menu-toogle__label">
               <span class="menu-toogle__top-bread"></span>
@@ -47,7 +48,8 @@
   
       </header> <!-- main-header -->
 
-      <div class="texto-contacto">
+      <div class="main-total">
+        <div class="texto-contacto">
         <h1>Contacto</h1>
         <h2><i>¿En qué podemos ayudarte?</i></h2>
         <p>Si tienes cualquier duda sobre tu compra o consulta sobre nuestras tiendas, puedes contactar con nosotros como prefieras:</p>
@@ -136,25 +138,27 @@
 </div>
 
         
-        </div>
+        
     <form class="contact-form" action="mailto:tuemail@example.com" method="post" enctype="text/plain">
         <label class="contact-form__label" for="name">Nombre:</label>
-        <input class="contact-form__label-text" type="text" id="name" name="name" placeholder="EJEMPLO: Matias Perez" required>
+        <input class="contact-form__label-text" type="text" id="name" name="name" placeholder="Matias Perez(*)" required>
 
         <label class="contact-form__label" for="email">E-mail:</label>
-        <input class="contact-form__label-email" type="email" id="email" name="email" placeholder="EJEMPLO: @gmail.com" required>
+        <input class="contact-form__label-email" type="email" id="email" name="email" placeholder="@gmail.com(*)" required>
 
         <label class="contact-form__label" for="comments">Comentarios:</label>
-        <textarea class="contact-form__label-comments" id="comments" name="comments" placeholder="sugerencias" required></textarea>
+        <textarea class="contact-form__label-comments" id="comments" name="comments" placeholder="sugerencias(*)" required></textarea>
 
     </form>
     
-    <button type="submit">Enviar</button>
+    <div class="boton"><button type="submit">Enviar</button></div>
     
     <div class="contenedor-final">
       <h2 class="footer-h2">Encuéntranos Aquí</h2>
     <p class="fooer-p">Bartolome Mitre 2105 Caba Buenos Aires Argentina</p>
     </div>
+      </div>
+      </div><!-- main-total -->
 
 
     <footer class="footer-footer">
@@ -166,16 +170,16 @@
     <h3 class="footer-title">Síguenos en</h3>
     <figure>
       <a href="https://www.facebook.com/" target="_blank">
-        <img class="loguito" src="imagenes/iconos/face.jpg" alt="facebook">
+        <img src="facebook.svg" width="25" height="25" alt="facebook">
       </a>
       <a href="https://www.instagram.com/" target="_blank">
-        <img class="loguito" src="imagenes/iconos/instagram.webp" alt="instagram">
+        <img src="instagram.svg" width="25" height="25" alt="instagram">
       </a>
       <a href="https://twitter.com/" target="_blank">
-        <img class="loguito" src="imagenes/iconos/x.webp" alt="X">
+        <img src="x-twitter.svg" width="25" height="25" alt="X">
       </a>
       <a href="https://www.youtube.com/" target="_blank">
-        <img class="loguito" src="imagenes/iconos/youtube.jpg" alt="youtube">
+        <img src="youtube.svg" width="25" height="25" alt="youtube">
       </a>
     </figure>
   </div>
@@ -195,20 +199,17 @@
   <div class="footer-column">
     <h3 class="footer-title">Métodos de pago</h3>
     <div class="payment-methods">
-      <a href="https://www.americanexpress.com/" target="_blank">
-        <img class="loguito" src="imagenes/metodos-de-pago/americaxpres.png" alt="American Express">
-      </a>
       <a href="https://www.mastercard.com/" target="_blank">
-        <img class="loguito" src="imagenes/metodos-de-pago/matercard.webp" alt="MasterCard">
+        <img src="cc-mastercard.svg" width="40" height="40" alt="MasterCard">
       </a>
-      <a href="#">
-        <img class="loguito" src="imagenes/metodos-de-pago/mercadopago.jpg" alt="Mercado pago">
+      <a href="https://www.mercadopago.com.ar/" target="_blank">
+        <img src="handshake-solid.svg" width="40" height="40" alt="Mercado pago">
       </a>
       <a href="https://www.paypal.com/" target="_blank">
-        <img class="loguito" src="imagenes/metodos-de-pago/39022.png" alt="PayPal">
+        <img  src="paypal.svg" width="40" height="40" alt="PayPal">
       </a>
       <a href="https://www.visa.com/" target="_blank">
-        <img class="loguito" src="imagenes/metodos-de-pago/visa.png" alt="Visa">
+        <img src="cc-visa.svg" width="40" height="40" alt="Visa">
       </a>
     </div>
   </div>
@@ -218,10 +219,10 @@
     <h3 class="footer-title">Descárgate nuestra APP</h3>
     <div class="app-download">
       <a href="https://www.apple.com/" target="_blank">
-        <img class="loguito" src="imagenes/descarga-nuestra-app/appstore.png" alt="Apple Store">
+        <img class=".descarga-app" src="cc-apple-pay.svg" width="130" height="60" alt="Apple Store">
       </a>
       <a href="https://play.google.com/" target="_blank">
-        <img class="loguito" src="imagenes/descarga-nuestra-app/googleplay.png" alt="Google Play Store">
+        <img class=".descarga-app" src="google-play.svg" width="130" height="60" alt="Google Play Store">
       </a>
     </div>
   </div> <!-- contenerdor -->

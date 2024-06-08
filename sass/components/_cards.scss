@@ -16,7 +16,15 @@
     width: 90px;
     height: 60px;
     object-fit: contain;
+    transition: all 0.9s;
 }
+
+.logo-marcas:hover{
+    box-shadow: 0 1px 40px 10px rgb(170, 54, 54);
+    transform: scale(1.2);
+}
+    
+
 .section-cards{
     border-radius: 5px;
     overflow: visible;
@@ -79,6 +87,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow: hidden;
     
 }
 .card__description{
@@ -86,7 +95,7 @@
 }
 
 .card__image-container:hover{
-    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+    box-shadow: 0 1px 40px 10px rgb(170, 54, 54);
     transform: scale(1.2);
 }
 
@@ -110,8 +119,14 @@
     justify-content: right;
     font-size: 40px;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 25px;
+    right: 50px;
+    overflow: visible;
+    transition: all 0.9s;
+}
+.h1-ofertas:hover{
+    box-shadow: 0 1px 40px 10px rgb(170, 54, 54);
+    transform: scale(1.2);
 }
 .p-marcas{
     display: flex;
@@ -119,6 +134,9 @@
     font-weight: 500;
     font-size: 30px;
     margin-bottom: 100px;
+    box-shadow: 0 1px 20px 10px rgb(105, 29, 29);
+    background-color: red;
+    color: white;
 }
 .nav-bar{
     border-radius: 5px;

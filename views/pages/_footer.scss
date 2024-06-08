@@ -1,28 +1,8 @@
-.loguitos{
-    padding: 2px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: none;
-    color: #fff;
-    cursor: pointer;
-    
-}
-.logo-carro{
-  position: relative;
-  margin-top: 17px;
-  margin-right: 40px;
-  padding: 5px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  object-fit: contain;
-}
-
 .logo-carro-1{
   position: relative;
   margin-top: 4px;
   padding: 5px;
+  transform: scale(1.2);
 }
 .loguito{
     background-color: black;
@@ -130,4 +110,5 @@
   margin-left: 1550px;
   text-align: center;
   z-index: 5;
+  cursor: pointer;
  }
