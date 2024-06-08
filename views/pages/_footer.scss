@@ -103,12 +103,64 @@
   color: black;
   margin-top: 40px;
  }
- .whatsapp{
-  position: fixed;
-  overflow: hidden;
-  margin-top: -400px;
-  margin-left: 1550px;
-  text-align: center;
+ // Variables
+$img-size-lg: 20px;
+$img-size-md: 15px;
+$img-size-sm: 5px;
+
+// Mixins para Responsividad
+@mixin responsive-img($size) {
+  width: $size;
+  height: $size;
+}
+
+// Estilos
+.whatsapp {
+  position: fixed; // Hace que el div sea fijo
+  bottom: 20px; // Ajusta según sea necesario
+  right: 20px; // Ajusta según sea necesario
+  display: flex;
+  align-items: center;
+  gap: 10px; // Espacio entre la imagen y el texto
+  background-color: transparent; // Fondo blanco para mejor visibilidad
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 5;
-  cursor: pointer;
- }
+
+  &:hover{
+    box-shadow: 0 1px 40px 10px rgb(0, 0, 0);
+    transform: scale(1.2);
+  }
+
+  a img {
+    @include responsive-img($img-size-lg);
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    a img {
+      @include responsive-img($img-size-md);
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    flex-direction: column; // Disponer la imagen y el texto en columna
+    a img {
+      @include responsive-img($img-size-sm);
+    }
+
+    p {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+}
