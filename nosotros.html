@@ -3,180 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imagenes/marcas/icono-logo.jpg">
+    <link rel="icon" href="desktop-solid.svg">
     <title>Proyecto Integrador - Contacto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de compilar SCSS a CSS -->
 </head>
 <body>
-  
     <header class="main-header">
         <!-- <input type="checkbox" id="menu"> -->
-  
-         <nav class="nav-bar">
-        <ul class="nav-bar__nav-list">
-          <li class="nav-bar__nav-item">
-            <a href="index.html" target="_blank" class="nav-bar__nav-link">Inicio</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="alta.html" target="_blank" class="nav-bar__nav-link">Alta</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="nosotros.html" target="_blank" class="nav-bar__nav-link">Nosotros</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="contacto.html" target="_blank" class="nav-bar__nav-link">Contacto</a>
-          </li>
-        </ul>
-      </nav> <!-- .nav-bar -->
-  
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a href="index.html" class="nav-bar__nav-link">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a href="alta.html" target="_blank" class="nav-bar__nav-link">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a href="nosotros.html" target="_blank" class="nav-bar__nav-link">Nosotros</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a href="contacto.html" target="_blank" class="nav-bar__nav-link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
         <div class="search-bar">
-          <div class="search-bar__logo-container"><img class="logo-carro-1" src="imagenes/marcas/icono-logo.jpg" width="80" height="70" alt="logo"></div>
-          <form action="#" class="search-bar__form-container">
-            <label for="busqueda" class="search-bar__form-label"><img class="lupa" src="imagenes/marcas/lupa.png" alt="lupa" width="45" height="25"></label>
-            <input type="search" class="search-bar__form-search" id="busqueda">
-            <input type="submit" class="search-bar__form-submit" value="Buscar">
-          </form>
-          <div class="search-bar__carrito-container"><img class="logo-carro" src="cart-shopping-solid.svg" alt="Anade al carrito" width="40" height="40"></div>
+            <div class="search-bar__logo-container">
+                <img class="logo-carro-1" src="desktop-solid.svg" width="200" height="70" alt="LAPTOZONE">
+            </div>
+            <form action="#" class="search-bar__form-container">
+                <label for="busqueda" class="search-bar__form-label">
+                    <img class="lupa" src="imagenes/marcas/lupa.png" alt="lupa" width="45" height="25">
+                </label>
+                <input type="search" class="search-bar__form-search" id="busqueda">
+                <input type="submit" class="search-bar__form-submit" value="Buscar">
+            </form>
+            <div class="search-bar__carrito-container">
+                <img class="logo-carro" src="cart-shopping-solid.svg" alt="Añade al carrito" width="40" height="40">
+            </div>
         </div>
-          <div class="menu-toogle">
+        <div class="menu-toogle">
             <label for="menu" class="menu-toogle__label">
-              <span class="menu-toogle__top-bread"></span>
-              <span class="menu-toogle__meat"></span>
-              <span class="menu-toogle__bottom-bread"></span>
+                <span class="menu-toogle__top-bread"></span>
+                <span class="menu-toogle__meat"></span>
+                <span class="menu-toogle__bottom-bread"></span>
             </label>
-          </div>
-        </div> <!-- .search-bar -->
-  
-      </header> <!-- main-header -->
+        </div>
+    </header>
 
-     <div class="nosotros-main">
-    <h1 class="nosotros-h1">¿Quiénes somos?</h1>
+    <div class="nosotros-main">
+        <h1 class="nosotros-h1">¿Quiénes somos?</h1>
+        <h3 class="nosotros-h3">SOBRE LAPTOZONE</h3>
+        <img class="left-img" src="imagenes/marcas/imagen1.webp" width="500" height="220" alt="Sobre laptozone">
+        <p class="nosotros-p">
+            Laptozone es la compañía líder en España y Europa en la distribución de electrónica de consumo y servicios relacionados. Forma parte de Laptozone Retail Group, con más de 1.000 puntos de venta ubicados en 13 países, una plantilla de 50.000 personas y una facturación en 2021/22 de 21,8 billones €. En España, la compañía está formada por un equipo de 7.000 personas y está presente en todas las Comunidades Autónomas con 110 establecimientos, además de la tienda online. En 2021/22 Laptozone facturó en nuestro país 2.304 millones €.
+        </p>
+        <div class="clear"></div>
 
-    <h3 class="nosotros-h3">SOBRE LAPTOZONE</h3>
+        <h3 class="nosotros-h3">MODELO DE NEGOCIO</h3>
+        <img class="right-img" src="imagenes/marcas/imagen5.png" width="500" height="220" alt="modelo de negocio">
+        <p class="nosotros-p">
+            Estos más de 20 años han estado llenos de aprendizajes en los que nuestro modelo de negocio ha ido evolucionando en consonancia con los nuevos comportamientos y tendencias de consumo. Y siempre con un objetivo claro: ser la primera opción de nuestros clientes cuando piensen en electrónica de consumo y ser el mejor retailer omnicanal de nuestro país. Para ello, nos apoyamos en tres pilares estratégicos en los que construimos nuestra apuesta de futuro: nuestro equipo, nuestros clientes y dejar un legado a la sociedad.
+        </p>
+        <div class="clear"></div>
 
-    <p class="nosotros-p">Laptozone es la compañía líder en España y Europa en la distribución de electrónica de consumo y servicios relacionados. 
+        <h3 class="nosotros-h3">EQUIPO</h3>
+        <img class="left-img" src="imagenes/marcas/imagen3.jpg" width="500" height="220" alt="equipo">
+        <p class="nosotros-p">
+            Es nuestro principal activo y el valor diferencial de nuestra organización. Somos el único retailer en España que cuenta con un equipo de 7.000 especialistas en electrónica de consumo que ponen el foco en el cliente para hacer más fácil su relación con la tecnología. Estamos certificados como Great Place to Work y trabajamos día a día para ser la compañía donde las personas quieran trabajar.
+        </p>
+        <div class="clear"></div>
 
-    Forma parte de Laptozone Retail Group, con más de 1.000 puntos de venta ubicados en 13 países, una plantilla de 50.000 personas y una facturación en 2021/22 de 21,8 billones €.
+        <h3 class="nosotros-h3">CLIENTES</h3>
+        <img class="right-img" src="imagenes/marcas/imagen4.jpg" width="500" height="220" alt="clientes">
+        <p class="nosotros-p">
+            Son nuestra razón de ser. Queremos ser su primera opción y ayudarles a sacar el máximo partido de los productos tecnológicos. Nuestro objetivo es mantener una relación duradera con ellos, por ello, nos esforzamos cada día para ser excelentes. Estamos inmersos en un proyecto de transformación muy ambicioso que sitúa al cliente en el centro de nuestra estrategia para buscar su conveniencia y ofrecerle la mejor experiencia de compra.
+        </p>
+        <div class="clear"></div>
 
-    En España, la compañía está formada por un equipo de 7.000 personas y está presente en todas las Comunidades Autónomas con 110 establecimientos, además de la tienda online. En 2021/22 Laptozone facturó en nuestro país 2.304 millones €.</p>
+        <h3 class="nosotros-h3">NUESTRO LEGADO EN LA SOCIEDAD</h3>
+        <img class="left-img" src="imagenes/marcas/imagen6.jpg" width="500" height="220" alt="nuestro legado en la sociedad">
+        <p class="nosotros-p">
+            Tiene que ver con hacer más fácil el acceso a la tecnología a todas las personas, en especial a aquellos colectivos más desfavorecidos y con acceso más limitado. En cuanto a nuestro compromiso con el entorno, trabajamos cada día para ser un retailer más sostenible y respetuoso con el medioambiente.
+        </p>
+        <div class="clear"></div>
 
-    <img class="p-imagen-1" src="imagenes/marcas/imagen1.webp" width="500" height="220" alt="Sobre laptozone">
-
-    <h3 class="nosotros-h3">MODELO DE NEGOCIO</h3>
-
-    <p class="nosotros-p">Estos más de 20 años han estado llenos de aprendizajes en los que nuestro modelo de negocio ha ido evolucionando en consonancia con los nuevos comportamientos y tendencias de consumo. Y siempre con un objetivo claro: ser la primera opción de nuestros clientes cuando piensen en electrónica de consumo y ser el mejor retailer omnicanal de nuestro país. Para ello, nos apoyamos en tres pilares estratégicos en los que construimos nuestra apuesta de futuro: nuestro equipo, nuestros clientes y dejar un legado a la sociedad.</p>
-
-    <img class="p-imagen-2" src="imagenes/marcas/imagen5.png" width="500" height="220" alt="modelo de negocio">
-
-    <h3 class="nosotros-h3">EQUIPO</h3>
-
-    <p class="nosotros-p">Es nuestro principal activo y el valor diferencial de nuestra organización. Somos el único retailer en España que cuenta con un equipo de 7.000 especialistas en electrónica de consumo que ponen el foco en el cliente para hacer más fácil su relación con la tecnología. Estamos certificados como Great Place to Work y trabajamos día a día para ser la compañía donde las personas quieran trabajar.</p>
-
-    <img class="p-imagen-3" src="imagenes/marcas/imagen3.jpg" width="500" height="220" alt="equipo">
-
-    <h3 class="nosotros-h3">CLIENTES</h3>
-
-    <p class="nosotros-p">Son nuestra razón de ser. Queremos ser su primera opción y ayudarles a sacar el máximo partido de los productos tecnológicos. Nuestro objetivo es mantener una relación duradera con ellos, por ello, nos esforzamos cada día para ser excelentes. Estamos inmersos en un proyecto de transformación muy ambicioso que sitúa al cliente en el centro de nuestra estrategia para buscar su conveniencia y ofrecerle la mejor experiencia de compra.</p>
-
-    <img class="p-imagen-4" src="imagenes/marcas/imagen4.jpg" width="500" height="220" alt="clientes">
-
-    <h3 class="nosotros-h3">NUESTRO LEGADO EN LA SOCIEDAD</h3>
-
-    <p class="nosotros-p">Tiene que ver con hacer más fácil el acceso a la tecnología a todas las personas, en especial a aquellos colectivos más desfavorecidos y con acceso más limitado. En cuanto a nuestro compromiso con el entorno, trabajamos cada día para ser un retailer más sostenible y respetuoso con el medioambiente.</p>
-
-    <img class="p-imagen-5" src="imagenes/marcas/imagen6.jpg" width="500" height="220" alt="nuestro legado en la sociedad">
-
-    <h3 class="nosotros-h3">NUESTRO COMPROMISO</h3>
-
-    <p class="nosotros-p">En Laptozone queremos que sepas que estamos aquí por y para ti, nuestro objetivo es que tengas la mejor experiencia y que, de lo único que tengas que preocuparte, sea de disfrutar de la mejor tecnología. Sabemos que a veces escoger no es fácil y, por eso, queremos que conozcas todo lo que ponemos a tu disposición para hacerte las cosas más fáciles.</p>
-
-<img class="p-imagen-6" src="imagenes/marcas/imagen7.png" width="500" height="220" alt="nuestro compromiso">
-
-</div> <!-- nosotros-main -->
-
-<footer class="footer-footer">
-  
-  <!-- Siguenos en -->
-  <div class="footer-column figure-footer">
-    <h3 class="footer-title">Síguenos en</h3>
-    <figure>
-      <a href="https://www.facebook.com/" target="_blank">
-        <img src="facebook.svg" width="25" height="25" alt="facebook">
-      </a>
-      <a href="https://www.instagram.com/" target="_blank">
-        <img src="instagram.svg" width="25" height="25" alt="instagram">
-      </a>
-      <a href="https://twitter.com/" target="_blank">
-        <img src="x-twitter.svg" width="25" height="25" alt="X">
-      </a>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img src="youtube.svg" width="25" height="25" alt="youtube">
-      </a>
-    </figure>
-  </div>
-
-  <!-- Información Legal -->
-  <div class="footer-column">
-    <h3 class="footer-title">Información Legal</h3>
-    <ul class="footer-links">
-      <li><a href="#">Términos y Condiciones</a></li>
-      <li><a href="#">Política de Privacidad</a></li>
-      <li><a href="#">Aviso Legal</a></li>
-      <li><a href="#">Envíos y Devoluciones</a></li>
-    </ul>
-  </div>
-
-  <!-- Métodos de Pago -->
-  <div class="footer-column">
-    <h3 class="footer-title">Métodos de pago</h3>
-    <div class="payment-methods">
-      <a href="https://www.mastercard.com/" target="_blank">
-        <img src="cc-mastercard.svg" width="40" height="40" alt="MasterCard">
-      </a>
-      <a href="https://www.mercadopago.com.ar/" target="_blank">
-        <img src="handshake-solid.svg" width="40" height="40" alt="Mercado pago">
-      </a>
-      <a href="https://www.paypal.com/" target="_blank">
-        <img  src="paypal.svg" width="40" height="40" alt="PayPal">
-      </a>
-      <a href="https://www.visa.com/" target="_blank">
-        <img src="cc-visa.svg" width="40" height="40" alt="Visa">
-      </a>
+        <h3 class="nosotros-h3">NUESTRO COMPROMISO</h3>
+        <img class="right-img" src="imagenes/marcas/imagen7.png" width="500" height="220" alt="nuestro compromiso">
+        <p class="nosotros-p">
+            En Laptozone queremos que sepas que estamos aquí por y para ti, nuestro objetivo es que tengas la mejor experiencia y que, de lo único que tengas que preocuparte, sea de disfrutar de la mejor tecnología. Sabemos que a veces escoger no es fácil y, por eso, queremos que conozcas todo lo que ponemos a tu disposición para hacerte las cosas más fáciles.
+        </p>
+        <div class="clear"></div>
     </div>
-  </div>
 
-  <!-- Descarga Nuestra APP -->
-  <div class="footer-column">
-    <h3 class="footer-title">Descárgate nuestra APP</h3>
-    <div class="app-download">
-      <a href="https://www.apple.com/" target="_blank">
-        <img class=".descarga-app" src="cc-apple-pay.svg" width="130" height="60" alt="Apple Store">
-      </a>
-      <a href="https://play.google.com/" target="_blank">
-        <img class=".descarga-app" src="google-play.svg" width="130" height="60" alt="Google Play Store">
-      </a>
+    <footer class="footer-footer">
+        <!-- Siguenos en -->
+        <div class="footer-column figure-footer">
+            <h3 class="footer-title">Síguenos en</h3>
+            <figure>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="facebook.svg" width="25" height="25" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="instagram.svg" width="25" height="25" alt="instagram">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="x-twitter.svg" width="25" height="25" alt="X">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="youtube.svg" width="25" height="25" alt="youtube">
+                </a>
+            </figure>
+        </div>
+
+        <!-- Información Legal -->
+        <div class="footer-column">
+            <h3 class="footer-title">Información Legal</h3>
+            <ul class="footer-links">
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Envíos y Devoluciones</a></li>
+            </ul>
+        </div>
+
+        <!-- Métodos de Pago -->
+        <div class="footer-column">
+            <h3 class="footer-title">Métodos de pago</h3>
+            <div class="payment-methods">
+                <a href="https://www.mastercard.com/" target="_blank">
+                    <img src="cc-mastercard.svg" width="40" height="40" alt="MasterCard">
+                </a>
+                <a href="https://www.mercadopago.com.ar/" target="_blank">
+                    <img src="handshake-solid.svg" width="40" height="40" alt="Mercado pago">
+                </a>
+                <a href="https://www.paypal.com/" target="_blank">
+                    <img src="paypal.svg" width="40" height="40" alt="PayPal">
+                </a>
+                <a href="https://www.visa.com/" target="_blank">
+                    <img src="cc-visa.svg" width="40" height="40" alt="Visa">
+                </a>
+            </div>
+        </div>
+
+        <!-- Descarga Nuestra APP -->
+        <div class="footer-column">
+            <h3 class="footer-title">Descárgate nuestra APP</h3>
+            <div class="app-download">
+                <a href="https://www.apple.com/" target="_blank">
+                    <img class="descarga-app" src="cc-apple-pay.svg" width="130" height="60" alt="Apple Store">
+                </a>
+                <a href="https://play.google.com/" target="_blank">
+                    <img class="descarga-app" src="google-play.svg" width="130" height="60" alt="Google Play Store">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="texto-final">
+        <p><strong>Precios exclusivos para compras en línea. Verifica los precios vigentes en las tiendas Laptozone en la Península y Baleares. Envíos disponibles únicamente a Península y Baleares.</strong></p>
+        <p>Promociones y ofertas aplicables únicamente a productos vendidos por Laptozone.</p>
+        <p>Algunos productos podrían tener una clasificación especial debido a promociones o campañas publicitarias. La clasificación de los resultados de búsqueda se basa en la coincidencia con el término buscado, la popularidad, disponibilidad, relevancia de la categoría y novedad del producto.</p>
+        <p><strong>PUBLICIDAD:</strong></p>
+        <ul>
+            <li>La Tarjeta Laptozone Club Card VISA es emitida por CaixaBank Payments & Consumer, E.F.C., E.P., S.A.U., sujeta a autorización. Los fondos recibidos están protegidos mediante depósito en una cuenta bancaria separada en CaixaBank, S.A. Consulta sobre la tarjeta con pago aplazado (revolving) en <a href="www.caixabankpc.com/es/productos">www.caixabankpc.com/es/productos</a>.</li>
+            <li><strong>Servicios exclusivos para titulares de la Tarjeta Laptozone Club Card.</strong> Descubre más en la app Laptozone Club y participa en la "Ruleta de Premios" y "Compra y Gana". Puedes participar desde las 00:01 horas del día de la compra hasta las 23:59, hora peninsular, del día 20 de cada mes. Condiciones en <a href="www.laptozone.es/es/specials/financiacion/LaptozoneClubCard">www.laptozone.es/es/specials/financiacion/LaptozoneClubCard</a>.</li>
+            <li>Financiación a través de la Tarjeta Laptozone Club Card Visa, emitida por CaixaBank Payments & Consumer, E.F.C., E.P., S.A.U., sujeta a autorización. Los fondos recibidos están protegidos mediante depósito en una cuenta bancaria separada en CaixaBank, S.A. TIN 0% TAE 0%. Financiación disponible en 3, 6, 10, 12, 18, 20 y 24 meses sin intereses. Importe mínimo para financiar: 299€. Ejemplo: para una compra financiada en 24 meses de 654€, 24 cuotas de 27,25€. Precio total e importe adeudado: 654€. Coste total del crédito e intereses: 0€. Sistema de amortización francés. Intereses subvencionados por Laptozone. Financiación al 0% en TV Neo, QLED y OLED desde el 20/05/2024 9:00h hasta el 09/06/2024 23:59h en nuestras tiendas y en laptozone.es, no acumulable con otras promociones.</li>
+        </ul>
     </div>
-  </div> <!-- contenerdor -->
 
-</footer>
-
-<div class="texto-final">
-    <p><strong>Precios exclusivos para compras en línea. Verifica los precios vigentes en las tiendas Laptozone en la Península y Baleares. Envíos disponibles únicamente a Península y Baleares.</strong></p>
-    <p>Promociones y ofertas aplicables únicamente a productos vendidos por Laptozone.</p>
-    <p>Algunos productos podrían tener una clasificación especial debido a promociones o campañas publicitarias. La clasificación de los resultados de búsqueda se basa en la coincidencia con el término buscado, la popularidad, disponibilidad, relevancia de la categoría y novedad del producto.</p>
-    <p><strong>PUBLICIDAD:</strong></p>
-    <ul>
-        <li>La Tarjeta Laptozone Club Card VISA es emitida por CaixaBank Payments & Consumer, E.F.C., E.P., S.A.U., sujeta a autorización. Los fondos recibidos están protegidos mediante depósito en una cuenta bancaria separada en CaixaBank, S.A. Consulta sobre la tarjeta con pago aplazado (revolving) en <a href="www.caixabankpc.com/es/productos">www.caixabankpc.com/es/productos</a>.</li>
-        <li><strong>Servicios exclusivos para titulares de la Tarjeta Laptozone Club Card.</strong> Descubre más en la app Laptozone Club y participa en la "Ruleta de Premios" y "Compra y Gana". Puedes participar desde las 00:01 horas del día de la compra hasta las 23:59, hora peninsular, del día 20 de cada mes. Condiciones en <a href="www.laptozone.es/es/specials/financiacion/LaptozoneClubCard">www.laptozone.es/es/specials/financiacion/LaptozoneClubCard</a>.</li>
-        <li>Financiación a través de la Tarjeta Laptozone Club Card Visa, emitida por CaixaBank Payments & Consumer, E.F.C., E.P., S.A.U., sujeta a autorización. Los fondos recibidos están protegidos mediante depósito en una cuenta bancaria separada en CaixaBank, S.A. TIN 0% TAE 0%. Financiación disponible en 3, 6, 10, 12, 18, 20 y 24 meses sin intereses. Importe mínimo para financiar: 299€. Ejemplo: para una compra financiada en 24 meses de 654€, 24 cuotas de 27,25€. Precio total e importe adeudado: 654€. Coste total del crédito e intereses: 0€. Sistema de amortización francés. Intereses subvencionados por Laptozone. Financiación al 0% en TV Neo, QLED y OLED desde el 20/05/2024 9:00h hasta el 09/06/2024 23:59h en nuestras tiendas y en laptozone.es, no acumulable con otras promociones.</li>
-    </ul>
-</div>
-
-<!-- Footer Copy -->
-<p class="footer-copy">
-  &copy; 2024 LaptopZone. Todos los derechos reservados.
-</p>
-                
-
+    <p class="footer-copy">
+        &copy; 2024 Laptozone. Todos los derechos reservados.
+    </p>
 
     <script type="module" src="/main.js"></script>
 </body>
