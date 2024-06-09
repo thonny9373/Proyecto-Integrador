@@ -1,43 +1,45 @@
-.logo-carro-1{
+.logo-carro-1 {
   position: relative;
-  margin-top: 4px;
-  padding: 5px;
+  margin-top: 0.25rem; /* 4px */
+  padding: 0.3125rem; /* 5px */
   transform: scale(1.2);
 }
-.loguito{
-    background-color: black;
-    padding: 2px;
-    width: 40px;
-    height: 40px;
+
+.loguito {
+  background-color: black;
+  padding: 0.125rem; /* 2px */
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
 }
 
-.carrito{
-    width: 40px;
-    height: 25px;
+.carrito {
+  width: 2.5rem; /* 40px */
+  height: 1.5625rem; /* 25px */
 }
+
 .footer-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 1.875rem; /* 30px */
+  padding: 1.25rem; /* 20px */
   background-color: rgb(173, 162, 162);
-  border-top: 1px solid #e7e7e7;
+  border-top: 0.0625rem solid #e7e7e7; /* 1px */
 
   .footer-column {
     flex: 1;
-    margin: 10px;
-    min-width: 200px;
+    margin: 0.625rem; /* 10px */
+    min-width: 12.5rem; /* 200px */
 
     .footer-title {
-      font-size: 19px;
+      font-size: 1.1875rem; /* 19px */
       font-weight: 900;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem; /* 10px */
     }
 
     .footer-subtitle {
-      font-size: 14px;
-      margin: 5px 0;
+      font-size: 0.875rem; /* 14px */
+      margin: 0.3125rem 0; /* 5px */
     }
 
     .footer-links {
@@ -45,7 +47,7 @@
       padding: 0;
 
       li {
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem; /* 5px */
 
         a {
           color: #333;
@@ -58,23 +60,27 @@
       }
     }
 
-    .payment-methods, .app-download, figure {
+    .payment-methods,
+    .app-download,
+    figure {
       display: flex;
-      gap: 10px;
+      gap: 0.625rem; /* 10px */
 
-      .payment-logo, .app-logo, .loguitos {
-        max-width: 50px;
+      .payment-logo,
+      .app-logo,
+      .loguitos {
+        max-width: 3.125rem; /* 50px */
       }
     }
 
     .contacto {
       .a-contacto {
         display: inline-block;
-        margin: 5px 0;
+        margin: 0.3125rem 0; /* 5px */
 
         .img-contacto {
-          width: 24px;
-          height: 24px;
+          width: 1.5rem; /* 24px */
+          height: 1.5rem; /* 24px */
           object-fit: contain;
         }
       }
@@ -84,26 +90,27 @@
 
 .footer-copy {
   text-align: center;
-  padding: 10px;
+  padding: 0.625rem; /* 10px */
   background-color: black;
   color: white;
-  margin-top: 20px;
-  padding: 20px;
- }
- .footer-footer{
-  margin-top: 150px;
- }
- 
- .texto-final{
+  margin-top: 1.25rem; /* 20px */
+}
+
+.footer-footer {
+  margin-top: 9.375rem; /* 150px */
+}
+
+.texto-final {
   background-color: #ded;
-  font-size: 12px;
+  font-size: 0.75rem; /* 12px */
   color: black;
-  margin-top: 40px;
- }
- // Variables
-$img-size-lg: 20px;
-$img-size-md: 15px;
-$img-size-sm: 5px;
+  margin-top: 2.5rem; /* 40px */
+}
+
+// Variables
+$img-size-lg: 1.25rem; /* 20px */
+$img-size-md: 0.9375rem; /* 15px */
+$img-size-sm: 0.3125rem; /* 5px */
 
 // Mixins para Responsividad
 @mixin responsive-img($size) {
@@ -114,19 +121,19 @@ $img-size-sm: 5px;
 // Estilos
 .whatsapp {
   position: fixed; // Hace que el div sea fijo
-  bottom: 30px; // Ajusta según sea necesario
-  right: 20px; // Ajusta según sea necesario
+  bottom: 1.875rem; /* 30px */
+  right: 1.25rem; /* 20px */
   display: flex;
   align-items: center;
-  gap: 10px; // Espacio entre la imagen y el texto
+  gap: 0.625rem; /* 10px */
   background-color: transparent; // Fondo blanco para mejor visibilidad
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 0.625rem; /* 10px */
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.3);
   z-index: 5;
 
-  &:hover{
-    box-shadow: 0 1px 40px 10px rgb(0, 0, 0);
+  &:hover {
+    box-shadow: 0 0.0625rem 2.5rem 0.625rem rgb(0, 0, 0);
     transform: scale(1.2);
   }
 
@@ -139,7 +146,7 @@ $img-size-sm: 5px;
     margin: 0;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 37.5rem) { /* 600px */
     a img {
       @include responsive-img($img-size-md);
     }
@@ -149,7 +156,7 @@ $img-size-sm: 5px;
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 25rem) { /* 400px */
     flex-direction: column; // Disponer la imagen y el texto en columna
     a img {
       @include responsive-img($img-size-sm);

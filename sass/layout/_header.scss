@@ -1,7 +1,3 @@
-/* -------------------------------------------------------- */
-/* HEADER */
-/* -------------------------------------------------------- */
-
 /* General Styles */
 body {
     margin: 0;
@@ -15,7 +11,7 @@ body {
     color: #fff;
     padding: 1rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 48rem) {
         flex-direction: column-reverse;
     }
 }
@@ -32,19 +28,19 @@ body {
         span {
             background: #fff;
             display: block;
-            height: 3px;
-            margin: 5px 0;
+            height: 0.1875rem; /* 3px en rem */
+            margin: 0.3125rem 0; /* 5px en rem */
             transition: all 0.3s;
-            width: 25px;
+            width: 1.5625rem; /* 25px en rem */
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 48rem) {
             display: block;
         }
     }
 
     &:checked + .menu-toggle__label span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(0.5rem) rotate(45deg); /* 8px en rem */
     }
 
     &:checked + .menu-toggle__label span:nth-child(2) {
@@ -52,7 +48,7 @@ body {
     }
 
     &:checked + .menu-toggle__label span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-0.5rem) rotate(-45deg); /* 8px en rem */
     }
 
     &:checked ~ .nav-bar {
@@ -66,7 +62,7 @@ body {
     width: 100%;
     background-color: black;
 
-    @media (max-width: 768px) {
+    @media (max-width: 48rem) {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -78,7 +74,7 @@ body {
         margin: 0;
         padding: 0;
 
-        @media (max-width: 768px) {
+        @media (max-width: 48rem) {
             flex-direction: column;
             width: 100%;
         }
@@ -87,7 +83,7 @@ body {
     &__nav-item {
         margin: 0;
 
-        @media (max-width: 768px) {
+        @media (max-width: 48rem) {
             width: 100%;
         }
     }
@@ -103,10 +99,10 @@ body {
 
         &:hover {
         background-color: red;
-        border-bottom-width: 4px;
+        border-bottom-width: 0.25rem; /* 4px en rem */
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 48rem) {
             width: 100%;
         }
     }
@@ -136,23 +132,23 @@ body {
         .search-bar__form {
             display: flex;
             width: 100%;
-            max-width: 500px;
+            max-width: 31.25rem; /* 500px en rem */
 
             &-search {
-                font-size: 15px;
+                font-size: 0.9375rem; /* 15px en rem */
                 font-weight: 500;
                 flex: 1;
-                padding: 0.5rem;
-                border: 1px solid #ccc;
-                border-radius: 4px 0 0 4px;
+                padding: 0.3125rem; /* 5px en rem */
+                border: 0.0625rem solid #ccc; /* 1px en rem */
+                border-radius: 0.25rem 0 0 0.25rem; /* 4px 0 0 0 en rem */
             }
 
             &-submit {
-                padding: 0.5rem 1rem;
+                padding: 0.3125rem 0.625rem; /* 5px 10px en rem */
                 background: #555;
-                border: 1px solid #555;
+                border: 0.0625rem solid #555; /* 1px en rem */
                 color: #fff;
-                border-radius: 0 4px 4px 0;
+                border-radius: 0 0.25rem 0.25rem 0; /* 0 4px 4px 0 en rem */
                 cursor: pointer;
                 transition: background 0.3s;
 
@@ -169,10 +165,8 @@ body {
         justify-content: flex-end;
 
         .search-bar__carrito {
-            max-width: 2rem;
+            max-width: 0.125rem; /* 2px en rem */
             height: auto;
         }
     }
 }
-
-

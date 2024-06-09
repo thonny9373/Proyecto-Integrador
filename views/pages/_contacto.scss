@@ -1,210 +1,214 @@
 // Variables
-$primary-color: #4caf50;
-$secondary-color: #f3f3f3;
-$text-color: #000;
-$separator-margin: 5px;
-$arrow-size: 14px;
-$breadcrumb-item-margin-right: 5px;
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #f3f3f3;
+  --text-color: #000;
+  --separator-margin: 5px;
+  --arrow-size: 14px;
+  --breadcrumb-item-margin-right: 5px;
+}
 
 // Breadcrumbs
 .ms-widget-breadcrumbs__list {
-    background-color: #dee;
-    margin-top: 90px;
-    margin-bottom: 20px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
+  background-color: #dee;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .ms-widget-breadcrumbs__item {
-    margin-right: $breadcrumb-item-margin-right;
-    
+  margin-right: var(--breadcrumb-item-margin-right);
 }
 
 .ms-widget-breadcrumbs__link {
-    text-decoration: none;
-    color: $text-color;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .ms-widget-breadcrumbs__separator {
-    margin: 0 $separator-margin;  
+  margin: 0 var(--separator-margin);
 }
 
 // Loader
 #loader {
-    top: 0%;
-    position: fixed;
-    #loader-img {
-        top: 50%;
-    }
+  top: 0%;
+  position: fixed;
+}
+
+#loader-img {
+  top: 50%;
 }
 
 // Back Button
 .back_btn_form {
-    display: none;
-    page: 2;
+  display: none;
+  page: 2;
 
-    .custom-left-arrow-img {
-        width: $arrow-size;
-        height: $arrow-size;
-    }
+  .custom-left-arrow-img {
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+  }
 
-    span {
-        margin-left: 5px;
-    }
+  span {
+    margin-left: 5px;
+  }
 }
 
 // Form Title
 .form_title_text {
-    background-color: #dee;
-    h3 {
-        margin-top: 30px;
-        margin-bottom: 90px;
-        font-weight: bold;
-    }
+  background-color: #dee;
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 90px;
+    font-weight: bold;
+  }
 }
 
 // Category List
 #CategoryList {
-    background-color: #dee;
-    .block_row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px;
-        padding: 5px;
-        border-bottom: 1px solid #ccc;
+  background-color: #dee;
 
-        .SubCat-Link {
-            text-decoration: none;
-            color: $text-color;
-        }
+  .block_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
 
-        .custom-right-arrow-img {
-            width: $arrow-size;
-            height: $arrow-size;
-        }
+    .SubCat-Link {
+      text-decoration: none;
+      color: var(--text-color);
     }
+
+    .custom-right-arrow-img {
+      width: var(--arrow-size);
+      height: var(--arrow-size);
+    }
+  }
 }
 
 // Progress Bar
 .progress_custom {
-    background-color: $secondary-color;
-    border-radius: 2px;
-    height: 10px;
-    margin: 20px 0;
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+  height: 10px;
+  margin: 20px 0;
 
-    .progress-bar {
-        background-color: $primary-color;
-        height: 100%;
-        border-radius: 2px;
-    }
+  .progress-bar {
+    background-color: var(--primary-color);
+    height: 100%;
+    border-radius: 2px;
+  }
 }
 
 // General Styles
 .w-200 {
-    width: 200px;
-    
+  width: 200px;
 }
 
 .f-400 {
-    background-color: #dee;
-    font-weight: 400;
+  background-color: #dee;
+  font-weight: 400;
 }
 
 // Contact Form
 .contact-form {
-    background-color: #dee;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    overflow: scroll;
-    
+  background-color: #dee;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: scroll;
 
-    &__label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-        
-    }
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
 
-    &__label-text,
-    &__label-email,
-    &__label-comments {
-        width: 100%;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
+  &__label-text,
+  &__label-email,
+  &__label-comments {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
-    &__label-comments {
-        height: 100px;
-        resize: vertical;
-    }
+  &__label-comments {
+    height: 100px;
+    resize: vertical;
+  }
 }
 
 // Submit Button
 button[type="submit"] {
-    background-color: $primary-color;
-    color: #fff;
-    margin-left: 20;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 
-
-    &:hover {
+  &:hover {
     box-shadow: 0 1px 40px 10px rgb(131, 182, 138);
     transform: scale(1.2);
-    background-color: darken($primary-color, 10%);
     
-    }
+  }
 }
 
 // Address Section
 .h2-contacto {
-    margin-top: 20px;
-    color: red;
+  margin-top: 20px;
+  color: red;
 }
 
 .p-contacto {
-    margin-bottom: 10px;
-
+  margin-bottom: 10px;
 }
-.footer-h2{
-    text-align: center;
-    padding-bottom: 10px;
-    cursor: pointer;
-    overflow: hidden;
 
-    &:hover {
+.footer-h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
     box-shadow: 0 1px 40px 10px rgb(131, 182, 138);
     transform: scale(1.2);
-    background-color: darken($primary-color, 10%);
+    
+  }
 }
+
+.fooer-p {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 40px;
 }
-.fooer-p{
-    font-weight: 400;
-    text-align: center;
-    padding-top: 40px;
+
+.contenedor-final {
+  background-color: #dee;
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 3px;
+  overflow: hidden;
 }
-.contenedor-final{
-    background-color: #dee;
-    margin-top: 5px;
-    padding: 20px;
-    border-radius: 3px;
-    overflow: hidden;
+
+.texto-contacto {
+  background-color: #dee;
 }
-.texto-contacto{
-    background-color: #dee;
+
+.main-total {
+  margin: 80px;
 }
-.main-total{
-    margin: 80px;
-}
-.boton{
-    text-align: center;
+
+.boton {
+  text-align: center;
 }
