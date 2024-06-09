@@ -30,6 +30,11 @@
         overflow: hidden;
         box-shadow: 0.3125rem 0 1.875rem 0.0625rem rgba(0, 0, 0, 0.20);
         background-color: rgb(246, 253, 253);
+
+    
+        @media only screen and (max-width: 768px) {
+            display: none; 
+        }
     }
 }
 
@@ -55,6 +60,7 @@
     overflow: hidden;
     transition: all 0.9s;
     background-color: white;
+    
 
     &:hover {
         box-shadow: 0 1px 40px 10px rgb(170, 54, 54);
@@ -64,15 +70,26 @@
 
 .card__image {
     width: 100%;
+    height: auto;
     height: 18.75rem;
     object-fit: contain;
     border-radius: 0.625rem 0.625rem 0 0;
-}
 
+    @media screen and (min-width: 768px) {
+  .imagen {
+    width: 5%;
+  }
+}
+}
 .card__content {
     background-color: red;
     color: white;
     margin: 1.875rem;
+     @media screen and (min-width: 768px) {
+  .imagen {
+    width: 5%;
+  }
+}
 }
 
 .product-price {
